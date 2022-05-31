@@ -1,0 +1,11 @@
+import subprocess
+import time
+
+print('Prog start')
+ip = "http://192.168.0.227:4747/video"
+subprocess.Popen(["python", "stream.py", "--device_id", ip, "--fps", "30", "--image_width", "640", "--image_height", "480"], start_new_session=True)
+# # while True:
+#     print("i m here)")
+#     time.sleep(1)
+
+#python stream.py --device_id 'http://192.168.0.227:4747/video' --fps 30 --image_width 640 --image_height 480 --port 8554 --stream_uri /video_stream 
